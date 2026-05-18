@@ -55,11 +55,9 @@
             padding: 12px 30px; font-family: 'Montserrat', sans-serif;
             font-size: 0.85rem; letter-spacing: 2px; cursor: pointer;
             border-radius: 30px; transition: all 1s ease;
-            pointer-events: none; 
-            display: none; 
-            margin-top: 120px; /* <- ESTO HACE IMPOSIBLE QUE SE CRUCE CON EL TEXTO */
-            z-index: 99999; 
-            text-align: center;
+            pointer-events: none; position: absolute; bottom: 35%; left: 50%;
+            transform: translateX(-50%);
+            z-index: 99999; display: none; text-align: center;
         }
         #enter-btn:hover { background: var(--white); color: var(--black); }
 
@@ -99,7 +97,7 @@
             padding: 15px 15px 50px 15px; background: #fff;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08); transform: rotate(-2deg);
             transition: transform 0.6s ease;
-            min-height: 250px;
+            min-height: 300px;
             display: flex; justify-content: center; align-items: center;
         }
         .chapter:nth-child(even) .photo-container { transform: rotate(2deg); }
@@ -185,7 +183,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="mi%20primer%20intento%20de%20manualidad.jpeg" alt="Mi primera manualidad">
+                <img class="story-img" src="mi%20primer%20intento%20de%20manualidad.jpeg" alt="Mi primera manualidad">
             </div>
             <div class="text-container">
                 <h2>Mi primera manualidad</h2>
@@ -196,7 +194,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="el%20primer%20sue%C3%B1o%20tuyo%20cumplido%20que%20despues%20me%20cumpliria%20mi%20sue%C3%B1o.jpg" onerror="this.onerror=null; this.src='el%20primer%20sue%C3%B1o%20tuyo%20cumplido%20que%20despues%20me%20cumpliria%20mi%20sue%C3%B1o.jpeg';" alt="El primer sueño cumplido">
+                <img class="story-img" src="el%20primer%20sue%C3%B1o%20tuyo%20cumplido%20que%20despues%20me%20cumpliria%20mi%20sue%C3%B1o.png" alt="El primer sueño cumplido">
             </div>
             <div class="text-container">
                 <h2>El primer sueño cumplido</h2>
@@ -206,7 +204,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="la%20broma%20del%20cambio%20de%20pelo.png" alt="La broma del pelo">
+                <img class="story-img" src="la%20broma%20del%20cambio%20de%20pelo.png" alt="La broma del pelo">
             </div>
             <div class="text-container">
                 <h2>La broma del cambio de color de pelo</h2>
@@ -216,7 +214,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="la%20primera%20carta.jpeg" alt="La primera carta">
+                <img class="story-img" src="la%20primera%20carta.jpeg" alt="La primera carta">
             </div>
             <div class="text-container">
                 <h2>La primera carta</h2>
@@ -227,7 +225,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="rosas%20de%20la%20nada%20por%20linda.jpeg" onerror="this.onerror=null; this.src='rosas%20de%20la%20nada%20por%20linda.jpg';" alt="Rosas de la nada">
+                <img class="story-img" src="rosas%20de%20la%20nada%20por%20linda.jpeg" alt="Rosas de la nada">
             </div>
             <div class="text-container">
                 <h2>Rosas de la nada por linda</h2>
@@ -237,7 +235,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="los%20primeros%20lirios.jpeg" alt="Los primeros lirios">
+                <img class="story-img" src="los%20primeros%20lirios.jpeg" alt="Los primeros lirios">
             </div>
             <div class="text-container">
                 <h2>Los primeros lirios</h2>
@@ -247,7 +245,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="la%20promesa%20de%20ser%20el%20ultimo%20de%20tus%20amores.jpeg" onerror="this.onerror=null; this.src='la%20promesa%20de%20ser%20el%20ultimo%20de%20tus%20amores.jpg';" alt="El último de tus amores">
+                <img class="story-img" src="la%20promesa%20de%20ser%20el%20ultimo%20de%20tus%20amores.png" alt="El último de tus amores">
             </div>
             <div class="text-container">
                 <h2>La promesa</h2>
@@ -258,7 +256,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="las%20primeras%20flores.jpeg" onerror="this.onerror=null; this.src='JASHJASA%20otra%20vez%20las%20primeras%20flores.jpeg';" alt="Las primeras flores">
+                <img class="story-img" src="las%20primeras%20flores.jpeg" alt="Las primeras flores">
             </div>
             <div class="text-container">
                 <h2>Las primeras flores</h2>
@@ -268,7 +266,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="ojooooooos.jpg" onerror="this.onerror=null; this.src='ojooooooos.jpeg';" alt="Ojitos">
+                <img class="story-img" src="ojooooooos.png" alt="Ojitos">
             </div>
             <div class="text-container">
                 <h2>Ojitos</h2>
@@ -278,7 +276,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="mi%20nerd%20churra.jpeg" alt="Mi nerd churra">
+                <img class="story-img" src="mi%20nerd%20churra.jpeg" alt="Mi nerd churra">
             </div>
             <div class="text-container">
                 <h2>Mi nerd churra</h2>
@@ -288,7 +286,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="el%20powerpoint%20que%20nunca%20me%20canso%20de%20leer.jpeg" onerror="this.onerror=null; this.src='el%20powerpoint%20que%20nunca%20me%20canso%20de%20leer.jpg';" alt="El PowerPoint">
+                <img class="story-img" src="el%20powerpoint%20que%20nunca%20me%20canso%20de%20leer.jpeg" alt="El PowerPoint">
             </div>
             <div class="text-container">
                 <h2>El PowerPoint que nunca me canso de leer</h2>
@@ -298,7 +296,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="midiendome%20el%20anillo.jpeg" onerror="this.onerror=null; this.src='midiendome%20el%20anillo.jpg';" alt="Midiéndome el anillo">
+                <img class="story-img" src="midiendome%20el%20anillo.jpeg" alt="Midiéndome el anillo">
             </div>
             <div class="text-container">
                 <h2>Midiéndome el anillo</h2>
@@ -308,7 +306,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="La%20carta%20quemada.jpeg" alt="La carta quemada">
+                <img class="story-img" src="La%20carta%20quemada.jpeg" alt="La carta quemada">
             </div>
             <div class="text-container">
                 <h2>La carta quemada</h2>
@@ -318,7 +316,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="quieres%20ser%20mi%20novia.jpeg" onerror="this.onerror=null; this.src='quieres%20ser%20mi%20novia.jpg';" alt="Quieres ser mi novia">
+                <img class="story-img" src="quieres%20ser%20mi%20novia.jpeg" alt="Quieres ser mi novia">
             </div>
             <div class="text-container">
                 <h2>¿Quieres ser mi novia?</h2>
@@ -328,7 +326,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="flyer%20enamorados%20omg.png" alt="Flyer enamorados">
+                <img class="story-img" src="flyer%20enamorados%20omg.png" alt="Flyer enamorados">
             </div>
             <div class="text-container">
                 <h2>Flyer enamorados</h2>
@@ -338,7 +336,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="bebe%20doctora%20y%20inge.png" alt="Bebé doctora e inge">
+                <img class="story-img" src="bebe%20doctora%20y%20inge.png" alt="Bebé doctora e inge">
             </div>
             <div class="text-container">
                 <h2>Bebé doctora e inge</h2>
@@ -366,7 +364,7 @@
 
         <section class="finale">
             <div class="photo-container final-photo reveal">
-                <img src="los%20mejores%20fondos.png" alt="Aun después de todo">
+                <img class="story-img" src="los%20mejores%20fondos.png" alt="Aun después de todo">
             </div>
             <h1 class="reveal">Aun después de todo...<br>te sigo eligiendo a ti 🤍</h1>
             <p class="reveal">Porque si algo aprendí de toda nuestra historia...<br>es que mi lugar favorito siempre terminaba siendo contigo.</p>
@@ -379,6 +377,32 @@
     </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll("img.story-img");
+            images.forEach(img => {
+                const originalSrc = decodeURI(img.getAttribute("src"));
+                // Le quita la extensión para probar con las demás si la original falla (que ya no va a fallar)
+                const base = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
+                
+                const attempts = [
+                    base + ".jpg",
+                    base + ".jpeg",
+                    base + ".png",
+                    base + ".PNG",
+                    base + ".JPEG",
+                    base + ".JPG"
+                ];
+                
+                let i = 0;
+                img.onerror = function() {
+                    if (i < attempts.length) {
+                        img.src = encodeURI(attempts[i]);
+                        i++;
+                    }
+                };
+            });
+        });
+
         // ==========================================
         // LÓGICA DE INTRODUCCIÓN Y MÚSICA
         // ==========================================
@@ -399,7 +423,6 @@
         setTimeout(() => { if(t3) t3.style.opacity = 1; }, 7500);
         setTimeout(() => { if(t3) t3.style.opacity = 0; }, 10500);
 
-        // El botón aparece cuando el texto ya no está
         setTimeout(() => { 
             if(btn) {
                 btn.style.display = 'block'; 
