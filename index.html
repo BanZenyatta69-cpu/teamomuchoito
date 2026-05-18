@@ -55,9 +55,11 @@
             padding: 12px 30px; font-family: 'Montserrat', sans-serif;
             font-size: 0.85rem; letter-spacing: 2px; cursor: pointer;
             border-radius: 30px; transition: all 1s ease;
-            pointer-events: none; position: absolute; bottom: 35%; left: 50%;
-            transform: translateX(-50%);
-            z-index: 99999; display: none; text-align: center;
+            pointer-events: none; 
+            display: none; 
+            margin-top: 120px; /* <- ESTO HACE IMPOSIBLE QUE SE CRUCE CON EL TEXTO */
+            z-index: 99999; 
+            text-align: center;
         }
         #enter-btn:hover { background: var(--white); color: var(--black); }
 
@@ -97,7 +99,7 @@
             padding: 15px 15px 50px 15px; background: #fff;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08); transform: rotate(-2deg);
             transition: transform 0.6s ease;
-            min-height: 300px;
+            min-height: 250px;
             display: flex; justify-content: center; align-items: center;
         }
         .chapter:nth-child(even) .photo-container { transform: rotate(2deg); }
@@ -194,7 +196,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="el%20primer%20sue%C3%B1o%20tuyo%20cumplido%20que%20despues%20me%20cumpliria%20mi%20sue%C3%B1o.jpg" alt="El primer sueño cumplido">
+                <img src="el%20primer%20sue%C3%B1o%20tuyo%20cumplido%20que%20despues%20me%20cumpliria%20mi%20sue%C3%B1o.jpg" onerror="this.onerror=null; this.src='el%20primer%20sue%C3%B1o%20tuyo%20cumplido%20que%20despues%20me%20cumpliria%20mi%20sue%C3%B1o.jpeg';" alt="El primer sueño cumplido">
             </div>
             <div class="text-container">
                 <h2>El primer sueño cumplido</h2>
@@ -225,7 +227,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="rosas%20de%20la%20nada%20por%20linda.jpeg" alt="Rosas de la nada">
+                <img src="rosas%20de%20la%20nada%20por%20linda.jpeg" onerror="this.onerror=null; this.src='rosas%20de%20la%20nada%20por%20linda.jpg';" alt="Rosas de la nada">
             </div>
             <div class="text-container">
                 <h2>Rosas de la nada por linda</h2>
@@ -245,7 +247,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="la%20promesa%20de%20ser%20el%20ultimo%20de%20tus%20amores.jpg" alt="El último de tus amores">
+                <img src="la%20promesa%20de%20ser%20el%20ultimo%20de%20tus%20amores.jpeg" onerror="this.onerror=null; this.src='la%20promesa%20de%20ser%20el%20ultimo%20de%20tus%20amores.jpg';" alt="El último de tus amores">
             </div>
             <div class="text-container">
                 <h2>La promesa</h2>
@@ -256,7 +258,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="las%20primeras%20flores.jpg" alt="Las primeras flores">
+                <img src="las%20primeras%20flores.jpeg" onerror="this.onerror=null; this.src='JASHJASA%20otra%20vez%20las%20primeras%20flores.jpeg';" alt="Las primeras flores">
             </div>
             <div class="text-container">
                 <h2>Las primeras flores</h2>
@@ -266,7 +268,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="ojooooooos.jpg" alt="Ojitos">
+                <img src="ojooooooos.jpg" onerror="this.onerror=null; this.src='ojooooooos.jpeg';" alt="Ojitos">
             </div>
             <div class="text-container">
                 <h2>Ojitos</h2>
@@ -286,7 +288,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="el%20powerpoint%20que%20nunca%20me%20canso%20de%20leer.jpeg" alt="El PowerPoint">
+                <img src="el%20powerpoint%20que%20nunca%20me%20canso%20de%20leer.jpeg" onerror="this.onerror=null; this.src='el%20powerpoint%20que%20nunca%20me%20canso%20de%20leer.jpg';" alt="El PowerPoint">
             </div>
             <div class="text-container">
                 <h2>El PowerPoint que nunca me canso de leer</h2>
@@ -296,7 +298,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="midiendome%20el%20anillo.jpg" alt="Midiéndome el anillo">
+                <img src="midiendome%20el%20anillo.jpeg" onerror="this.onerror=null; this.src='midiendome%20el%20anillo.jpg';" alt="Midiéndome el anillo">
             </div>
             <div class="text-container">
                 <h2>Midiéndome el anillo</h2>
@@ -306,7 +308,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="La%20carta%20quemada.jpg" alt="La carta quemada">
+                <img src="La%20carta%20quemada.jpeg" alt="La carta quemada">
             </div>
             <div class="text-container">
                 <h2>La carta quemada</h2>
@@ -316,7 +318,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="quieres%20ser%20mi%20novia.jpg" alt="Quieres ser mi novia">
+                <img src="quieres%20ser%20mi%20novia.jpeg" onerror="this.onerror=null; this.src='quieres%20ser%20mi%20novia.jpg';" alt="Quieres ser mi novia">
             </div>
             <div class="text-container">
                 <h2>¿Quieres ser mi novia?</h2>
@@ -326,7 +328,7 @@
 
         <section class="chapter reveal">
             <div class="photo-container">
-                <img src="flyer%20enamorados%20omg.jpg" alt="Flyer enamorados">
+                <img src="flyer%20enamorados%20omg.png" alt="Flyer enamorados">
             </div>
             <div class="text-container">
                 <h2>Flyer enamorados</h2>
@@ -364,7 +366,7 @@
 
         <section class="finale">
             <div class="photo-container final-photo reveal">
-                <img src="los%20mejores%20fondos.jpg" alt="Aun después de todo">
+                <img src="los%20mejores%20fondos.png" alt="Aun después de todo">
             </div>
             <h1 class="reveal">Aun después de todo...<br>te sigo eligiendo a ti 🤍</h1>
             <p class="reveal">Porque si algo aprendí de toda nuestra historia...<br>es que mi lugar favorito siempre terminaba siendo contigo.</p>
@@ -377,6 +379,9 @@
     </div>
 
     <script>
+        // ==========================================
+        // LÓGICA DE INTRODUCCIÓN Y MÚSICA
+        // ==========================================
         const t1 = document.getElementById('t1');
         const t2 = document.getElementById('t2');
         const t3 = document.getElementById('t3');
@@ -394,6 +399,7 @@
         setTimeout(() => { if(t3) t3.style.opacity = 1; }, 7500);
         setTimeout(() => { if(t3) t3.style.opacity = 0; }, 10500);
 
+        // El botón aparece cuando el texto ya no está
         setTimeout(() => { 
             if(btn) {
                 btn.style.display = 'block'; 
